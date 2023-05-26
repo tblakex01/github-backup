@@ -1,0 +1,84 @@
+Parameters:
+  GitHubToken:
+    Default: /api/github
+    Description: The GitHub personal access token stored as a secure string in SSM
+      Parameter Store.
+    Type: AWS::SSM::Parameter::Value<String>
+Resources:
+  GithubBackupPipelineRole:
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+        - Action: sts:AssumeRole
+          Effect: Allow
+          Principal:
+            Service:
+            - codepipeline.amazonaws.com
+        Version: '2012-10-17'
+      ManagedPolicyArns:
+      - arn:aws:iam::aws:policy/AmazonS3FullAccess
+      - arn:aws:iam::aws:policy/AWSCodeBuildAdminAccess
+      - arn:aws:iam::aws:policy/AWSLambda_FullAccess
+    Type: AWS::IAM::Role
+  Properties:
+    Name:
+      Ref: PipelineName
+    RoleArn:
+      Fn::GetAtt:
+      - GithubBackupPipelineRole
+      - Arn
+    Stages:
+    - Actions:
+      - ActionTypeId:
+          Category: Source
+          Owner: ThirdParty
+          Provider: GitHub
+          Version: '1'
+        Configuration:
+          Branch:
+            Ref: GitHubBranch
+          OAuthToken:
+            Ref: GitHubToken
+          Owner:
+            Ref: GitHubOwner
+          PollForSourceChanges: 'false'
+          Repo:
+            Ref: GitHubRepo
+        Name: Source
+        OutputArtifacts:
+        - Name: SourceOutput
+        RunOrder: 1
+      Name: Source
+    - Actions:
+      - ActionTypeId:
+          Category: Build
+          Owner: AWS
+          Provider: CodeBuild
+          Version: '1'
+        Configuration:
+          ProjectName:
+            Ref: CodeBuildProjectName
+        InputArtifacts:
+        - Name: SourceOutput
+        Name: Build
+        OutputArtifacts:
+        - Name: BuildOutput
+        RunOrder: 1
+      Name: Build
+    - Actions:
+      - ActionTypeId:
+          Category: Invoke
+          Owner: AWS
+          Provider: Lambda
+          Version: '1'
+        Configuration:
+          FunctionName:
+            Ref: LambdaFunctionName
+          UserParameters:
+            Fn::Sub: '{"BucketName":"${BucketName}"}'
+        InputArtifacts:
+        - Name: BuildOutput
+        Name: Deploy
+        RunOrder: 1
+      Name: Deploy
+  Type: AWS::CodePipeline::Pipeline
