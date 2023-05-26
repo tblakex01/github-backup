@@ -12,6 +12,7 @@ If you find this project useful, you can support its development by making a don
 ## TODO
 
 - Macie Scan
+- Deploy the CI/CD pipeline
 
 ## Notebooks
 
