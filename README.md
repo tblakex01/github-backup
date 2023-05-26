@@ -1,6 +1,13 @@
 
 # AWS IaC CI/CD Project
 
+This project was entirely developed using ChatGPT and the Noteable plugin. It demonstrates the implementation of:
+
+- Generation of IaC for a CI/CD pipeline (CloudFormation, CodePipeline and CodeBuild)
+- Deploying the IaC using the AWS Python SDK  (boto3)
+- Deploying code to GitHub using the GitHub API.
+- Creation of a GitHub README.md.
+
 ## Donation Button
 
 If you find this project useful, you can support its development by making a donation. Think of it as buying me a coffee. Click on the button below to make a donation. You can choose an amount between 1 and 99.
