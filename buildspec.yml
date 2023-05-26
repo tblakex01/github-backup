@@ -1,0 +1,12 @@
+
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Checking for requirements.txt...
+      - if [ -f requirements.txt ]; then echo requirements.txt found, installing requirements... && pip install -r requirements.txt; else echo requirements.txt not found, skipping...; fi
+  build:
+    commands:
+      - echo Checking for template.yaml...
+      - if [ -f template.yaml ]; then echo template.yaml found, running cfn-lint... && cfn-lint template.yaml; else echo template.yaml not found, skipping...; fi
