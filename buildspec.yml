@@ -12,3 +12,5 @@ phases:
     commands:
       - echo Checking for template.yaml...
       - if [ -f template.yaml ]; then echo template.yaml found, running cfn-lint... && cfn-lint template.yaml; else echo template.yaml not found, skipping...; fi
+    finally:
+      - echo User wants ChatGPT to generate a joke
