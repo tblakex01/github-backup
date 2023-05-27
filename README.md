@@ -18,6 +18,8 @@ If you find this project useful, you can support its development by making a don
 
 ## [Notebook Analysis](notebook-analysis.md)
 
+## [AWS Resources](aws-resources.md)
+
 ## TODO
 
 - [x] Macie Scan
