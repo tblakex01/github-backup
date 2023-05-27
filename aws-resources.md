@@ -1,10 +1,23 @@
+
 ## AWS Resources
 
-- GithubBackupPipeline: AWS CodePipeline
-- GithubBackupBuildStack: AWS CloudFormation Stack
-- github-backup-build: AWS CodeBuild Project
-- github-backup-service-role: AWS IAM Role
-- github-backup-bucket-1685154153: AWS S3 Bucket
+### AWS Config
 
-- Macie
-- Security Hub
+- **Config Rule:** `s3-bucket-public-read-prohibited`
+- **Config Rule:** `s3-bucket-public-write-prohibited`
+
+### AWS Lambda
+
+- **Function:** `trigger_macie_job`
+- **Execution Role:** `NoteableBackupRole`
+- **Role Policy:** `allow-config-invoke`
+
+### AWS CloudWatch Events
+
+- **Rule:** `config-change-trigger-macie-job`
+- **Target:** `trigger_macie_job` (Lambda function)
+
+### AWS Macie
+
+- **Job:** `macie-job`
+- **S3 Bucket:** `macie-sensitive-data-bucket` (for sensitive data discovery results)
