@@ -36,7 +36,7 @@ If you find this project useful, you can support its development by making a don
 
 - [x] Macie Scan
 - [x] Deploy the CI/CD pipeline
-- [ ] Configure SNS notification for Macie detections
+- [x] Configure SNS notification for Macie detections (configured to send findings to Security Hub)
 
 ## Notebooks
 
