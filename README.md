@@ -27,3 +27,21 @@ If you find this project useful, you can support its development by making a don
 - [x] Update the CodeBuild project to use valid S3 buckets
 - [x] Create the S3 buckets using boto3
 - [ ] Other tasks...
+
+## Security Hub Findings
+- [ ] AWS Config should be enabled
+- [ ] Avoid the use of the root user
+- [ ] Ensure a log metric filter and alarm exist for AWS Config configuration changes
+- [ ] Ensure a log metric filter and alarm exist for S3 bucket policy changes
+- [ ] Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs
+- [ ] Ensure a log metric filter and alarm exist for AWS Management Console authentication failures
+- [ ] Ensure a log metric filter and alarm exist for CloudTrail configuration changes
+- [ ] Ensure a log metric filter and alarm exist for IAM policy changes
+- [ ] A log metric filter and alarm should exist for usage of the "root" user
+- [ ] Ensure a log metric filter and alarm exist for Management Console sign-in without MFA
+- [ ] Ensure a log metric filter and alarm exist for VPC changes
+- [ ] Ensure a log metric filter and alarm exist for route table changes
+- [ ] Ensure a log metric filter and alarm exist for changes to network gateways
+- [ ] Ensure a log metric filter and alarm exist for changes to Network Access Control Lists (NACL)
+- [ ] Ensure a log metric filter and alarm exist for security group changes
+- [ ] Ensure a log metric filter and alarm exist for unauthorized API calls
