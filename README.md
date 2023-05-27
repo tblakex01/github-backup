@@ -36,7 +36,6 @@ If you find this project useful, you can support its development by making a don
 
 - [x] Macie Scan
 - [x] Deploy the CI/CD pipeline
-- [ ] Create missing CodeBuild build project, github-backup-build
 - [ ] Configure SNS notification for Macie detections
 
 ## Notebooks
