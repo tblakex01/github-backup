@@ -28,4 +28,4 @@ If you find this project useful, you can support its development by making a don
 - [x] Add a policy to the Lambda function's execution role that allows AWS Config to invoke the function.
 - [x] Create a CloudWatch Events rule that triggers the Lambda function when AWS Config detects a configuration change.
 - [x] Create a Macie job that scans the S3 bucket for sensitive data when the Lambda function is triggered.
-- [ ] Update 'aws-resources.md' in the Github repo to include these new AWS resources.
+- [ ] Address all Security Hub findings.
