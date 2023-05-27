@@ -26,11 +26,10 @@ If you find this project useful, you can support its development by making a don
 - [x] Deploy the CodeBuild project using boto3
 - [x] Update the CodeBuild project to use valid S3 buckets
 - [x] Create the S3 buckets using boto3
-- [ ] Other tasks...
+- [ ] Macie to save sensitive findings to sensitive S3 bucket.
 
 ## Security Hub Findings
 - [ ] AWS Config should be enabled
-- [ ] Avoid the use of the root user
 - [ ] Ensure a log metric filter and alarm exist for AWS Config configuration changes
 - [ ] Ensure a log metric filter and alarm exist for S3 bucket policy changes
 - [ ] Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs
