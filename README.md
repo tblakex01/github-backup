@@ -22,6 +22,18 @@ If you find this project useful, you can support its development by making a don
 
 ## TODO
 
+- [x] Generate CloudFormation template for the CodeBuild project
+- [x] Deploy the CodeBuild project using boto3
+- [x] Update the CodeBuild project to use valid S3 buckets
+- [x] Create the S3 buckets using boto3
+- [x] Update the CodeBuild project to use the correct service role
+- [x] Update the CodeBuild project to use the correct source and artifact types
+- [x] Check the status and logs of the CodePipeline and CodeBuild resources
+- [x] Update the CodeBuild project to use the correct project name
+- [x] Update the CodeBuild project to use the correct artifact override
+- [x] Update the CodePipeline to use the correct build project
+- [x] Update the README.md file to reflect the progress
+
 - [x] Macie Scan
 - [x] Deploy the CI/CD pipeline
 - [ ] Create missing CodeBuild build project, github-backup-build
