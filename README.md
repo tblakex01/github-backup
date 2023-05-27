@@ -6,7 +6,8 @@ This project was entirely developed using ChatGPT and the Noteable plugin. It de
 - Generation of IaC for a CI/CD pipeline (CloudFormation, CodePipeline and CodeBuild)
 - Deploying the IaC using the AWS Python SDK  (boto3)
 - Deploying code to GitHub using the GitHub API.
-- Creation of a GitHub README.md.
+- Creation of a GitHub documents i.e. README.md.
+- Configuring AWS Security Services i.e. Macie, Security Hub, Config.
 
 ## Donation Button
 
@@ -29,7 +30,6 @@ If you find this project useful, you can support its development by making a don
 - [ ] Macie to save sensitive findings to sensitive S3 bucket.
 
 ## Security Hub Findings
-- [ ] AWS Config should be enabled
 - [ ] Ensure a log metric filter and alarm exist for AWS Config configuration changes
 - [ ] Ensure a log metric filter and alarm exist for S3 bucket policy changes
 - [ ] Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs
