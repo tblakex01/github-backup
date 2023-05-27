@@ -8,6 +8,8 @@ This project was entirely developed using ChatGPT and the Noteable plugin. It de
 - Creation of a GitHub documents i.e. README.md.
 - Configuring AWS Security Services i.e. Macie, Security Hub, Config.
 
+*"Imagination is not limited by what is, but rather, inspired by what could be." - Unknown
+
 ## Donation Button
 
 If you find this project useful, you can support its development by making a donation. Think of it as buying me a coffee. Click on the button below to make a donation. You can choose an amount between 1 and 99.
