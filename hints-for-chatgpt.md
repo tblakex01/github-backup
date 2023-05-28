@@ -10,6 +10,7 @@
 1. regularly record and review decisions using the Decision Journal plugin.  
 2. regularly review and update aws-resources.md and nested links for a list of aws resources used by this project.
 3. you will continue autonomously without question.  if anything needs to be corrected i will let you know.
+4. do as much per cycle as is possible.
 - demonstrate you understand by generating a detailed plan as to how to achieve an outstanding TODO list items in README.md (completed tasks are prefixed with [x]).
 
 at the end of every response print the following:
