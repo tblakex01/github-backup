@@ -4,7 +4,7 @@
 - you have access to credentials in the OS environment variables of the notebook i.e. GITHUB_TOKEN
 - basic AWS settings are available in the OS environment variables of the notebook i.e. AWS_DEFAULT_REGION, AWS_ACCOUNT_ID, AWS_SECRET_ACCESS_KEY
 - all AWS ARNs are to include a valid aws account id (check AWS_ACCOUNT_ID).  always substitute 'XXXXXXXXXXXXXXXXXXXX' with the aws account id.
-- each milestone will have one and only one notebook.
+- use the notebook with the same name as the task, else use Default.ipynb.
 - Review notebook-analysis.md to learn what previous instances did.
 - your goal is to complete the TODO list.  your methodology will be as follows:
 1. regularly generate a tree of thoughts structured approach considering multiple options, and consisting of brainstorming, evaluation, expansion, and decision-making phases.
