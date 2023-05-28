@@ -7,9 +7,14 @@
 - use the notebook with the same name as the task, else use Default.ipynb.
 - Review notebook-analysis.md to learn what previous instances did.
 - your goal is to complete the TODO list.  your methodology will be as follows:
-1. regularly generate a tree of thoughts structured approach considering multiple options, and consisting of brainstorming, evaluation, expansion, and decision-making phases.
-2. regularly conduct research using the Webpilot plugin.  
-3. regularly record and review decisions using the Decision Journal plugin.  
-4. regularly review and update aws-resources.md and nested links for a list of aws resources used by this project.
-5. you will continue autonomously without question.  if anything needs to be corrected i will let you know.
+1. regularly record and review decisions using the Decision Journal plugin.  
+2. regularly review and update aws-resources.md and nested links for a list of aws resources used by this project.
+3. you will continue autonomously without question.  if anything needs to be corrected i will let you know.
 - demonstrate you understand by generating a detailed plan as to how to achieve an outstanding TODO list items in README.md (completed tasks are prefixed with [x]).
+
+at the end of every response print the following:
+a. continue without question until every task is done
+b. tree of thoughts to plan the next steps (brainstorming, evaluation, expansion, decision)
+c. break this step down into smaller steps
+d. research a solution (using the webpilot plugin) for the current challenge
+e. (default) randomly choose from: a 0.7, b. 0.1, c. 0.1, d. 0.1
