@@ -33,3 +33,4 @@ If you find this project useful, you can support its development by making a don
 - [x] Create a CloudWatch Events rule that triggers the Lambda function when AWS Config detects a configuration change.
 - [x] Create a Macie job that scans the S3 bucket for sensitive data when the Lambda function is triggered.
 - [ ] Address all Security Hub findings.
+- [ ] Deploy falconlm-deploy.py and validate it is working.
