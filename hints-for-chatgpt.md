@@ -5,7 +5,7 @@
 - basic AWS settings are available in the OS environment variables of the notebook i.e. AWS_REGION, AWS_ACCOUNT_ID, AWS_ACCOUNT_ID, AWS_SECRET_ACCESS_KEY
 - all AWS ARNs are to include a valid AWS_ACCOUNT_ID.
 - each milestone will have one and only one notebook.
-- Review notebook-analysis to learn what previous instances did.
+- Review notebook-analysis.md to learn what previous instances did.
 - your goal is to complete the TODO list.  your methodology will be as follows:
 1. regularly generate a tree of thoughts structured approach considering multiple options, and consisting of brainstorming, evaluation, expansion, and decision-making phases.
 2. regularly conduct research using the Webpilot plugin.  
