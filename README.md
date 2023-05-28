@@ -27,6 +27,9 @@ If you find this project useful, you can support its development by making a don
 ## TODO
 
 - [x] Create a Macie job that scans the S3 bucket for sensitive data when the Lambda function is triggered.
+- [ ] Fix buildspec.yaml so that it does not fail github-backup-build (CodeBuild)
+- [ ] Develop Lambda that retrieves all repositories for https://github.com/matthewhand
+  - [ ] Lambda then downloads all repositories into github-backup-bucket-1685154153 (S3)
 - [ ] Deploy FalconLM chatbot.
   - [ ] Execute falconlm-deploy.py.
   - [ ] validate it is working.
