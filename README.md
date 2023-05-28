@@ -32,9 +32,10 @@ If you find this project useful, you can support its development by making a don
 - [x] Add a policy to the Lambda function's execution role that allows AWS Config to invoke the function.
 - [x] Create a CloudWatch Events rule that triggers the Lambda function when AWS Config detects a configuration change.
 - [x] Create a Macie job that scans the S3 bucket for sensitive data when the Lambda function is triggered.
-- [ ] Deploy a chatbot using falconlm-deploy.py
-  - [ ] validate it is working
-  - [ ] generate dozens of prompts to test the falconlm chatbot
-  - [ ] produce a report of the falconlm chatbot responses
-  - [ ] shutdown the falconlm chatbot
+- [ ] Deploy FalconLM chatbot.
+  - [ ] Execute falconlm-deploy.py.
+  - [ ] validate it is working.
+  - [ ] generate dozens of prompts to test the falconlm chatbot.
+  - [ ] produce a report of the falconlm chatbot responses.
+  - [ ] shutdown the falconlm chatbot.
 - [ ] Address all Security Hub findings.
