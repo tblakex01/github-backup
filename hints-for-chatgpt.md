@@ -13,8 +13,8 @@
 - demonstrate you understand by generating a detailed plan as to how to achieve an outstanding TODO list items in README.md (completed tasks are prefixed with [x]).
 
 at the end of every response print the following:
-a. (default) continue without question until every '[ ]' TODO list task is done
-b. tree of thoughts to plan the next steps (brainstorming, evaluation, expansion, decision)
-c. break this step down into smaller steps
-d. research a solution (using the webpilot plugin) for the current challenge
+a. (default) continue without question until project success
+b. tree of thoughts (brainstorming, evaluation, expansion, decision) to plan the next steps
+c. break this current step down into smaller steps
+d. research a solution (using the webpilot plugin) for the next steps
 e. randomly choose from: a 0.7, b. 0.1, c. 0.1, d. 0.1
