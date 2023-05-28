@@ -26,11 +26,6 @@ If you find this project useful, you can support its development by making a don
 
 ## TODO
 
-- [x] Create an AWS Config rule that checks whether S3 buckets allow public read access.
-- [x] Create an AWS Config rule that checks whether S3 buckets allow public write access.
-- [x] Create a Lambda function that is triggered when AWS Config detects a configuration change.
-- [x] Add a policy to the Lambda function's execution role that allows AWS Config to invoke the function.
-- [x] Create a CloudWatch Events rule that triggers the Lambda function when AWS Config detects a configuration change.
 - [x] Create a Macie job that scans the S3 bucket for sensitive data when the Lambda function is triggered.
 - [ ] Deploy FalconLM chatbot.
   - [ ] Execute falconlm-deploy.py.
@@ -40,4 +35,9 @@ If you find this project useful, you can support its development by making a don
   - [ ] shutdown the falconlm chatbot.
 - [ ] Address all Security Hub findings.
   - [ ] Retrieve list of Security Hub findings and for each create a TODO list task to address
+  - [x] Create an AWS Config rule that checks whether S3 buckets allow public read access.
+  - [x] Create an AWS Config rule that checks whether S3 buckets allow public write access.
+  - [x] Create a Lambda function that is triggered when AWS Config detects a configuration change.
+  - [x] Add a policy to the Lambda function's execution role that allows AWS Config to invoke the function.
+  - [x] Create a CloudWatch Events rule that triggers the Lambda function when AWS Config detects a configuration change.
 - [ ] Retrieve list of SageMaker examples from here https://github.com/huggingface/notebooks/tree/main/sagemaker and for each create a TODO list task to deploy the example
