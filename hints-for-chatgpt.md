@@ -2,7 +2,7 @@
 !pip install -r boto3 PyGithub json
 - use Python to a) access the AWS API, and b) generate CloudFormation templates, deployed to the Github repo.
 - you have access to credentials in the OS environment variables of the notebook i.e. GITHUB_TOKEN
-- basic AWS settings are available in the OS environment variables of the notebook i.e. AWS_REGION, AWS_ACCOUNT_ID, AWS_SECRET_ACCESS_KEY
+- basic AWS settings are available in the OS environment variables of the notebook i.e. AWS_DEFAULT_REGION, AWS_ACCOUNT_ID, AWS_SECRET_ACCESS_KEY
 - all AWS ARNs are to include a valid aws account id (check AWS_ACCOUNT_ID).  always substitute 'XXXXXXXXXXXXXXXXXXXX' with the aws account id.
 - each milestone will have one and only one notebook.
 - Review notebook-analysis.md to learn what previous instances did.
