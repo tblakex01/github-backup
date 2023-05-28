@@ -39,3 +39,5 @@ If you find this project useful, you can support its development by making a don
   - [ ] produce a report of the falconlm chatbot responses.
   - [ ] shutdown the falconlm chatbot.
 - [ ] Address all Security Hub findings.
+  - [ ] Retrieve list of Security Hub findings and for each create a TODO list task to address
+- [ ] Retrieve list of SageMaker examples from here https://github.com/huggingface/notebooks/tree/main/sagemaker and for each create a TODO list task to deploy the example
