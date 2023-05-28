@@ -22,6 +22,8 @@ If you find this project useful, you can support its development by making a don
 
 ## [AWS Resources](aws-resources.md)
 
+## [Hints for ChatGPT](hints-for-chatgpt.md)
+
 ## TODO
 
 - [x] Create an AWS Config rule that checks whether S3 buckets allow public read access.
