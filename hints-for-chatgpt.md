@@ -1,4 +1,4 @@
-- use these python commands at the beginning of notebooks to install python modules:
+- Never forget these python commands to install python modules: !pip install -r PyGithub 
 !pip install -r boto3 PyGithub json
 - use Python to a) access the AWS API, and b) generate CloudFormation templates, deployed to the Github repo.
 - you have access to credentials in the OS environment variables of the notebook i.e. GITHUB_TOKEN
